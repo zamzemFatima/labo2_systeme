@@ -145,7 +145,7 @@ eth0
 
 **Commande utilisée :**
 ```bash
-ip rout
+ip route
 
 ```
 
@@ -178,54 +178,53 @@ cat /etc/resolv.conf
 
 **Commande exacte utilisée :**
 ```bash
+ping -c 4 127.0.0.1
 
 ```
 
 **Résultat (succès/échec) :**
 ```
-
+Succes
 ```
 
 **Temps moyen de réponse :**
 ```
-
+0.039ms
 ```
 
 ### b) Ping vers la passerelle - 4 paquets
 
 **Résultat (succès/échec) :**
 ```
-
+Echec
 ```
 
 **Temps moyen de réponse :**
 ```
-
+il n'y a pas de emps moyen vue que ca a echouer mais le temps totale est de 3006 ms.
 ```
 
 ### c) Ping vers 8.8.8.8 - 4 paquets
 
 **Résultat (succès/échec) :**
 ```
-
+Succes
 ```
 
 **Temps moyen de réponse :**
 ```
-
+11.206ms
 ```
 
 ### d) Si le ping vers 8.8.8.8 fonctionne mais pas vers google.com, quel serait le problème probable ?
 
 ```
 Votre réponse :
-
-
+Le probleme probable est un probleme de DNS. L'internet fonctionne mais le DNS ne fonctionne pas bien donc il peux pas traduire/trouver l'adresse IP du nom google.com.
 ```
 
 > 📸 **Capture d'écran 2** : Insérez votre capture des tests ping
-> 
-> >![Capture 2](captures/capture2_ping.png)
+> ![alt text](image-5.png)
 
 ---
 
@@ -235,42 +234,40 @@ Votre réponse :
 
 **Commande utilisée :**
 ```bash
-
+arp -a
 ```
 
 **Nombre d'entrées :**
-```
+```bash
+Une entrée
+
 
 ```
-
-**Une entrée (IP et MAC) :**
+**Une entrée (IP et MAC) :**`
 ```
-
+172.21.32.1    00:15:5d:c0:49:b0
 ```
-
 ### b) Requête DNS pour www.collegemaisonneuve.qc.ca
 
 **Commande utilisée :**
 ```bash
-
+nslookup www.cmaisonneuve.qc.ca
 ```
 
 **Adresse IP obtenue :**
 ```
-
+151.101.126.132
 ```
 
 ### c) Commande `dig` pour github.com - TTL
 
 **TTL (Time To Live) de l'enregistrement :**
 ```
-
+TTL est 0ms mais le temps de la requete est de 13ms.
 ```
 
 > 📸 **Capture d'écran 3** : Insérez votre capture de la table ARP et d'une requête DNS
-> 
-> >![Capture 3](captures/capture3_arp_dns.png)
-
+> ![alt text](image-6.png)
 ---
 
 # Partie 3 : Analyse Wireshark (25 points)
