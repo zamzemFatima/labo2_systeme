@@ -314,8 +314,8 @@ echo reply est la réponse envoyée par le serveur cible
 
 > 📸 **Capture d'écran 5** : Capture Wireshark montrant la requête et réponse DNS
 > 
-> ![alt text](image-7.png)
-> ![alt text](image-8.png)
+> ![alt text](image-10.png)
+> ![alt text](image-11.png)
 
 ---
 
