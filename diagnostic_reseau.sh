@@ -6,53 +6,56 @@ echo " Date et heure : $(date)"
 echo "version de systeme : $(uname -a)"
 echo ""
 
-echo "configuration reseaux"
+echo "=== Configuration Reseau ==="
 
 IP_LOCAL=$(hostname -I | awk '{print $1}')
 echo " Adresse IP locale :$IP_LOCAL"
 
 PASSERELLE=$(ip route | grep default | awk '{print$3}')
-echo " passerelle : $PASSSERELLE "
+echo " passerelle : $PASSERELLE "
 
 
 echo "serveurs DNS configure : "
-cat /etc/resolv.conf | grep nameserver
+grep nameserver /etc/resolv.conf
 echo ""
 
 
-echo " test la connectivite "
+echo "=== Test la Connectivite ==="
 
 test_ping() {
-local cible=$1
-local description=$2
-ping -c 2 -w 2 "$cible" &> dev/null
-if [$? -eq 0 ]; then
-    echo "$description is accesible($cible)"
-else
-    echo "$description est pas accesble ($cible)"
+    local cible=$1
+    local description=$2
+    ping -c 2 -w 2 "$cible" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "$description is accesible($cible)"
+    else
+        echo "$description est pas accesble ($cible)"
     fi
-    }
+}
 
-test_ping 127.0.0.1 "$PASSSERELLE"
+test_ping 127.0.0.1 "Localhost"
+test_ping 127.0.0.1 "$PASSERELLE"
 
-test_ping 8.8.8.8 "internet(8.8.8.8)"
+test_ping 8.8.8.8 "interne)"
 
-DNS_TEST=$(ping -c 1 -w 2 google.com &> /dev/null)
+DNS_TEST=$(ping -c 1 -w 2 google.com &> /dev/null 2>&1)
 if [ $? -eq 0 ]; then 
     echo " dns fonctionne "
 else 
     echo " ne fonctionne pas "
 fi 
-    echo ""
+echo ""
 
 
-echo " table ARP "
-
+echo "=== table ARP ==="
 arp -n || echo "la table ne peux etre afficher"
 echo ""
 
 
-echo " resolution DNS "
+echo "=== resolution DNS ==="
+grep nameserver /etc/resolv.conf
+echo ""
+
 
 
 

@@ -383,6 +383,7 @@ Décrivez ici les difficultés que vous avez rencontrées lors de la création d
 > 📸 **Capture d'écran 7** : Capture montrant l'exécution de votre script
 > 
 > ![Capture 7](captures/capture7_script_execution.png)
+> ![alt text](image-7.png)
 
 ---
 
