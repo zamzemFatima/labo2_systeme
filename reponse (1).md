@@ -306,15 +306,16 @@ echo reply est la réponse envoyée par le serveur cible
 
 | Information | Valeur observée |
 |-------------|-----------------|
-| Port source (requête) | |
-| Port destination (requête) | |
-| Protocole de transport | |
-| Type de requête DNS | |
-| Adresse IP dans la réponse | |
+| Port source (requête) |  54648 |
+| Port destination (requête) | 53 |
+| Protocole de transport | UDP |
+| Type de requête DNS | Standard Query Type A |
+| Adresse IP dans la réponse | 140.82.113.3 |
 
 > 📸 **Capture d'écran 5** : Capture Wireshark montrant la requête et réponse DNS
 > 
-> ![Capture 5](captures/capture5_wireshark_dns.png)
+> ![alt text](image-7.png)
+> ![alt text](image-8.png)
 
 ---
 
