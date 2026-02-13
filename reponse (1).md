@@ -325,21 +325,22 @@ echo reply est la réponse envoyée par le serveur cible
 
 | Information | ARP Request | ARP Reply |
 |-------------|-------------|-----------|
-| Adresse MAC source | | |
-| Adresse MAC destination | | |
-| Adresse IP recherchée | | |
+| Adresse MAC source | 24:2f:d0:02:b8:6d |a0:d3:c1:17:e9:7c |
+| Adresse MAC destination | ff:ff:ff:ff;ff| 24:2f:d0:02:b8:6d |
+| Adresse IP recherchée | 192.168.68.115|192.168.68.115 |
 
 ### Question : Pourquoi l'adresse MAC de destination dans l'ARP Request est-elle `ff:ff:ff:ff:ff:ff` ?
 
 ```
 Votre réponse :
-
+C’est une diffusion(couche 2), l’ordinateur demande à tout le monde qui a l’IP recherchee.
 
 ```
 
 > 📸 **Capture d'écran 6** : Capture Wireshark montrant l'échange ARP
 > 
 > ![Capture 6](captures/capture6_wireshark_arp.png)
+> ![alt text](image-9.png)
 
 ---
 
