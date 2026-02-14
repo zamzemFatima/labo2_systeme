@@ -356,21 +356,21 @@ C’est une diffusion(couche 2), l’ordinateur demande à tout le monde qui a l
 
 Cochez les fonctionnalités que vous avez implémentées :
 
-- [ ] Affichage du nom de l'hôte
-- [ ] Affichage de la date et heure
-- [ ] Affichage de la version du système
-- [ ] Affichage de l'adresse IP locale
-- [ ] Affichage de l'adresse de la passerelle
-- [ ] Affichage des serveurs DNS
-- [ ] Test de connectivité localhost
+- [ / ] Affichage du nom de l'hôte
+- [ / ] Affichage de la date et heure
+- [ / ] Affichage de la version du système
+- [ / ] Affichage de l'adresse IP locale
+- [ / ] Affichage de l'adresse de la passerelle
+- [ / ] Affichage des serveurs DNS
+- [ / ] Test de connectivité localhost
 - [ ] Test de connectivité passerelle
-- [ ] Test de connectivité Internet (8.8.8.8)
-- [ ] Test de résolution DNS (google.com)
-- [ ] Affichage de la table ARP
+- [ / ] Test de connectivité Internet (8.8.8.8)
+- [ / ] Test de résolution DNS (google.com)
+- [ / ] Affichage de la table ARP
 - [ ] Résolution DNS de 2+ domaines
-- [ ] Gestion des erreurs (messages si échec)
+- [ / ] Gestion des erreurs (messages si échec)
 - [ ] Commentaires dans le code
-- [ ] Affichage clair avec titres de sections
+- [ / ] Affichage clair avec titres de sections
 
 ### Difficultés rencontrées (optionnel)
 
