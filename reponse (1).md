@@ -201,7 +201,7 @@ Echec
 
 **Temps moyen de réponse :**
 ```
-il n'y a pas de emps moyen vue que ca a echouer mais le temps totale est de 3006 ms.
+il n'y a pas de temps moyen vue que ca a echouer mais le temps totale est de 3006 ms.
 ```
 
 ### c) Ping vers 8.8.8.8 - 4 paquets
@@ -224,7 +224,7 @@ Le probleme probable est un probleme de DNS. L'internet fonctionne mais le DNS n
 ```
 
 > 📸 **Capture d'écran 2** : Insérez votre capture des tests ping
-> ![alt text](image-5.png)
+> ![capture 2](capture2_ping.png)
 
 ---
 
@@ -267,7 +267,7 @@ TTL est 0ms mais le temps de la requete est de 13ms.
 ```
 
 > 📸 **Capture d'écran 3** : Insérez votre capture de la table ARP et d'une requête DNS
-> ![alt text](image-6.png)
+> ![alt text](capture3_arp_dns.ong)
 ---
 
 # Partie 3 : Analyse Wireshark (25 points)
@@ -314,8 +314,8 @@ echo reply est la réponse envoyée par le serveur cible
 
 > 📸 **Capture d'écran 5** : Capture Wireshark montrant la requête et réponse DNS
 > 
-> ![alt text](image-10.png)
-> ![alt text](image-11.png)
+> ![alt text](capture6_wireshark_arp.png)
+> ![alt text](capture7wireshark_arp.png)
 
 ---
 
