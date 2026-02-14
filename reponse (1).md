@@ -224,7 +224,8 @@ Le probleme probable est un probleme de DNS. L'internet fonctionne mais le DNS n
 ```
 
 > 📸 **Capture d'écran 2** : Insérez votre capture des tests ping
-> ![capture 2](capture2_ping.png)
+> ![alt text](captures/capture2_ping.png)
+> ![alt text](captures/capture2_pingg.png)
 
 ---
 
@@ -267,7 +268,7 @@ TTL est 0ms mais le temps de la requete est de 13ms.
 ```
 
 > 📸 **Capture d'écran 3** : Insérez votre capture de la table ARP et d'une requête DNS
-> ![alt text](capture3_arp_dns.ong)
+> ![alt text](captures/capture3_arp.png)
 ---
 
 # Partie 3 : Analyse Wireshark (25 points)
@@ -295,8 +296,8 @@ echo reply est la réponse envoyée par le serveur cible
 ```
 
 > 📸 **Capture d'écran 4** : Capture Wireshark montrant les paquets ICMP avec le détail d'un paquet
-> 
-> ![Capture 4](captures/capture4_wireshark_icmp.png)
+> ![alt text](captures/capture4_wireshark_icmp.png)
+>
 
 ---
 
@@ -314,8 +315,8 @@ echo reply est la réponse envoyée par le serveur cible
 
 > 📸 **Capture d'écran 5** : Capture Wireshark montrant la requête et réponse DNS
 > 
-> ![alt text](capture6_wireshark_arp.png)
-> ![alt text](capture7wireshark_arp.png)
+> ![alt text](captures/capture5_wireshark_dns.png)
+> ![alt text](captures/capture5_wshark.dns.png)
 
 ---
 
@@ -339,8 +340,8 @@ C’est une diffusion(couche 2), l’ordinateur demande à tout le monde qui a l
 
 > 📸 **Capture d'écran 6** : Capture Wireshark montrant l'échange ARP
 > 
-> ![Capture 6](captures/capture6_wireshark_arp.png)
-> ![alt text](image-9.png)
+>![alt text](captures/capture6_wireshark_arp.png)
+> 
 
 ---
 
@@ -382,8 +383,7 @@ Décrivez ici les difficultés que vous avez rencontrées lors de la création d
 
 > 📸 **Capture d'écran 7** : Capture montrant l'exécution de votre script
 > 
-> ![Capture 7](captures/capture7_script_execution.png)
-> ![alt text](image-7.png)
+>![alt text](captures/capture7_script.png)
 
 ---
 
